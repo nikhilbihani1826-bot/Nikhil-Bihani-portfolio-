@@ -124,9 +124,8 @@ function renderCertificates() {
       el("div", { class: "cert-body" }, [
         el("p", { class: "cert-issuer", text: c.issuer }),
         el("h3", { class: "cert-title", text: c.title }),
-         el("div",{class:"cert-actions"},[view])
         el("p", { class: "cert-date", text: `Completed ${c.date}` }),
-        
+        el("div",{class:"cert-actions"},[view])
       ])
     ]));
   });
