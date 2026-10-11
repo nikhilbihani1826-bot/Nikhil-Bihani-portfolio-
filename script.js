@@ -117,8 +117,7 @@ function renderCertificates() {
     ]);
     const view = el("a", { class: "btn btn-ghost btn-sm", href: c.file, target: "_blank", rel: "noopener",
       "aria-label": `View certificate: ${c.title} (opens in a new tab)` }, [icon("i-eye"), document.createTextNode("View Certificate")]);
-    const download = el("a", { class: "btn btn-primary btn-sm", href: c.file, download: c.downloadAs,
-      "aria-label": `Download certificate: ${c.title}` }, [icon("i-download"), document.createTextNode("Download Certificate")]);
+    
 
     grid.append(el("article", { class: "card cert-card" }, [
       preview,
